@@ -9,7 +9,7 @@ $(()=>
         $(".click-left , .click-right , #BG").hide( 0 ) ; 
         $("#fz").on( 'input' , () => { fz = $("#fz").val() / 10 ;  console.log( fz ) ;  $(":root").css('font-size' , fz + 'em') ; } ) ; 
         $(".click-left").on( "click" , () => { a <= 1 ? a = 1 : a -- ;  console.log(a) ;  $( "#" + a ).css( 'display' , 'flex' ) ;  $( "#" + ( a + 1 ) ).css( 'display' , '' ) ; } ) ; 
-        $(".click-right").on( "click" , () => { a >= max ? { a = max ; ++end ? { document.body.exitFullscreen() ; $( "#" + max ).hide(0) ; $( "#flscrn" ).show(0) ; } : {} ; } : a ++ ;  console.log(a) ;  $( "#" + a ).css( 'display' , 'flex' ) ;  $( "#" + ( a - 1 ) ).css( 'display' , '' ) ; } ) ; 
+        $(".click-right").on( "click" , () => { a >= max ? a = max : a ++ ; console.log(a) ;  $( "#" + a ).css( 'display' , 'flex' ) ;  $( "#" + ( a - 1 ) ).css( 'display' , '' ) ; } ) ; 
         $("#flscrn span").on( "click" , () => { document.body.requestFullscreen() ;  $("#flscrn").hide(0) ;  $(".click-left , .click-right , #BG").show( 0 ) ;  $("#1").css("display","flex") ; } ) ; 
         function turningMachine()
         {
